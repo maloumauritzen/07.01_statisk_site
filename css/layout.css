@@ -80,4 +80,27 @@ h1{
     .box{
         max-width: 240px;
     }
+    h2{
+        text-align: center;
+    }
+  }
+
+  /********************************/
+    /*TILPASNING TIL DESKTOP*/
+  /********************************/
+  @media (min-width: 1025px) {
+    .box_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 15px;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .box{
+        max-width: 340px;
+    }
+    h2{
+        text-align: center;
+    }
   }
