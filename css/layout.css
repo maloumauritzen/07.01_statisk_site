@@ -2,10 +2,15 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1{
+    text-align: center;
+    margin: 10% 0 10% 0;
+}
+
 .r{
     transform: scaleX(-1);
     display: inline-block;
-    color: red;
+    color: blue;
 }
 
 .flex_container{
@@ -32,3 +37,29 @@ body{
     color: blue;
   }
 
+  .box_grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-content: center; 
+    gap: 15px; 
+  }
+
+  .box {
+    width: 100%; /* Sikrer, at boksene tilpasses rammen */
+    border: 1px solid black;
+    height: 60px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box_grid a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .box_grid a:hover{
+    color: blue;
+  }
