@@ -1,0 +1,34 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.r{
+    transform: scaleX(-1);
+    display: inline-block;
+    color: red;
+}
+
+.flex_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.flex_container ul {
+    display: flex; /* Arrangerer li'erne i en række */
+    list-style-type: none; /* Fjerner punktegn */
+    margin: 0; /* Fjerner standard margin */
+    padding: 0; /* Fjerner standard padding */
+    gap: 20px; /* Tilføjer mellemrum mellem menupunkterne */
+  }
+
+  .flex_container a {
+    text-decoration: none;
+    color: black; 
+    font-weight: bold;
+  }
+
+  .flex_container a:hover{
+    color: blue;
+  }
+
