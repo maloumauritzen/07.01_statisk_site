@@ -62,4 +62,22 @@ h1{
 
   .box_grid a:hover{
     color: blue;
+    border: 1px solid blue;
+  }
+
+  /********************************/
+    /*TILPASNING TIL TABLETS*/
+  /********************************/
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .box_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 15px;
+        max-width: 780px;
+        margin: 0 auto;
+    }
+    .box{
+        max-width: 240px;
+    }
   }
