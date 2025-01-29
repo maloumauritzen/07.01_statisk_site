@@ -111,6 +111,49 @@ h1{
     color: blue;
   }
 
+  .link_sti{
+    font-size: 10px;
+    font-weight: lighter;
+  }
+
+  .produkt_grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .produkt_img{
+    max-width: 100%;
+  }
+  .produkt_tekstboks{
+    grid-column: 2/3;
+  }
+  .produkt_tekstboks h3{
+    font-size: 15px;
+    margin: 0;
+    padding: 37% 0 20% 0 ;
+  }
+  .produkt_tekstboks h4{
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+  }
+  .produkt_tekstboks p{
+    font-size: 13px;
+    margin: 0 0 15% 0;
+    padding: 0;
+  }
+
+  .blue_tekstboks{
+    border: 1px solid blue;
+    margin: 10% 7% 0 5%;
+    padding: 10% 0 50% 0;
+  }
+  .blue_tekstboks h3,
+  .blue_tekstboks p,
+  .blue_tekstboks a{
+    padding-left: 5%;
+  }
+
+
   /********************************/
     /*TILPASNING TIL TABLETS*/
   /********************************/
