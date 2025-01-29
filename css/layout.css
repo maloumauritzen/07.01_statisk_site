@@ -78,6 +78,7 @@ h1{
   }
 
   .card{
+    position: relative;
     border: 1px solid black;
   }
 
@@ -92,6 +93,20 @@ h1{
   .udsolgt{
     opacity: 40%;
   }
+
+  .sale{
+    position: absolute;
+    background-color: lightblue;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .soldout {
+    position: absolute;
+    background-color: #444;
+    color: #fff;
+    padding: 15px 15px 15px 15px;
+   }
 
   .knap{
     background-color: blue;
