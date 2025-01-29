@@ -65,6 +65,52 @@ h1{
     border: 1px solid blue;
   }
 
+  .product_list_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .card img{
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid black;
+  }
+
+  .card{
+    border: 1px solid black;
+  }
+
+  .card p, h3{
+    padding-left: 3%;
+  }
+
+  .grey{
+    color: rgb(180, 180, 180);
+  }
+  
+  .udsolgt{
+    opacity: 40%;
+  }
+
+  .knap{
+    background-color: blue;
+    border: 1px solid blue;
+    margin: 3% 50% 10% 3%;
+    padding: 3%;
+  }
+  .knap a{
+    color: white;
+    text-decoration: none;
+  }
+  .knap:hover{
+    background-color: white;
+    border: 1px solid blue;
+  }
+  .knap a:hover{
+    color: blue;
+  }
+
   /********************************/
     /*TILPASNING TIL TABLETS*/
   /********************************/
