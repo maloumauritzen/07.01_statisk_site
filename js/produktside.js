@@ -1,31 +1,35 @@
-const product_list_container = document.querySelector("#product_list_container2");
+console.log("script hentet");
 
-fetch(`https://kea-alt-del.dk/t7/api/products/`)
+const category = "Apparel";
+const listContainer = document.querySelector(".productList");
+
+fetch(`https://kea-alt-del.dk/t7/api/products?limit=10`)
   .then((response) => response.json())
-  .then((data) => showList(data));
+  .then(showProductList);
 
-function showList(data) {
+function showProductList(data) {
   const markup = data
     .map(
       (product) =>
         `
       <section class="product_list_container">
-        <article class="card">
-          <img
-            src="https://kea-alt-del.dk/t7/images/webp/640/${data.id}.webp"
-            alt="${data.productdisplayname}"
-          />
-          <h3>${data.productdisplayname}</h3>
-          <p class="grey">Sweatshirts | Reebok</p>
-          <p>DKK ${data.price},-</p>
-          <div class="knap">
-            <a href="produkt.html">Læs mere</a>
-          </div>
-        </article>
-        `
+         <article class="card">
+           <img
+             src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp"
+             alt="${product.productdisplayname}"
+           />
+           <h3>${product.productdisplayname}</h3>
+           <p class="grey">Sweatshirts | Reebok</p>
+           <p>DKK ${product.price},-</p>
+           <div class="knap">
+             <a href="produkt.html">Læs mere</a>
+           </div>
+         </article>
+      `
     )
     .join("");
 
-  console.log(markup);
-  product_list_container.innerHTML = markup;
+  if (listContainer) {
+    listContainer.innerHTML = markup;
+  }
 }
